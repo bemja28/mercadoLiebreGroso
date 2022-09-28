@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<!-- Include Head -->
+<%- include('partials/head', {title: 'Login'}) %>
+<body>
+	<!-- Header -->
+	<%- include('partials/headerNavbar') %>
+	<!-- /Header -->
+
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h2 class="products-title">Ingresa</h2>
+			</div>
+		</div>
+		<div class="col-12">
+
+
+
+			<form action="" method="">
+				<div class="row product-detail">
+					
+
+					<div class="col-12 col-md-9">
+						<label for="email" class="form-label">Email:</label>
+						<input type="email"  name="email" class="form-input">
+					</div>
+					<div class="col-12 col-md-9">
+						<label for="password" class="form-label">Contraseña:</label>
+						<input type="password"  name="password" class="form-input">
+					</div>
+					<div class="col-12 col-sm-9" >
+		<button type="submit" class="buy-now-button"><a href="/">Iniciar secion</a>
+		</button>	
+		<p class="form-label">¿Olvidaste tu <a href="#">contraseña</a>?</p>
+	</div>
+    <div class="col-12 col-md-9">
+    <label for="remember" class="form-label">Recordame</label>
+    <input type="checkbox" name="remember" id="remember">
+  </div>
+
+	
+	<div class="col-12 col-md-9">
+		<button type="submit" class="buy-now-button"><a href="/users/Register">Registrate</a>
+		
+		</button>
+	</div>
+					
+				</div>
+			</form>
+		</div>
+
+	</div>
+	<!-- /todos los productos -->
+
+	<!-- footer -->
+	<%- include('partials/footer') %>
+	<!-- /footer -->
+</body>	
+</html>

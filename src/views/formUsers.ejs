@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Include Head -->
+<%- include('partials/head', {title: 'Formulario de usuarios'}) %>
+<body>
+	<!-- Header -->
+	<%- include('partials/headerNavbar') %>
+	<!-- /Header -->
+
+	<div class="container products-wrapper">
+		<div class="row">
+			<div class="col-12">
+				<h2 class="products-title">Formulario de registro</h2>
+			</div>
+		</div>
+		<div class="col-12">
+			<form action="" method="POST" enctype="multipart/form-data">
+				<div class="row product-detail">
+					<div class="col-12 col-md-6">
+						<label for="firstName" class="form-label">Nombre:</label>
+						<input type="text"  name="firstName" class="form-input">
+					</div>
+					<div class="col-12 col-md-6">
+						<label for="lastName" class="form-label">Apellido:</label>
+						<input type="text"  name="lastName" class="form-input">
+					</div>
+
+					<div class="col-12 col-md-6">
+						<label for="alias" class="form-label">Alias:</label>
+						<input type="text"  name="alias" class="form-input">
+					</div>
+
+					<div class="col-12 col-md-6">
+						<label for="fechaNacimiento" class="form-label">Fecha de nacimiento:</label>
+						<input type="date"  name="fechaNacimiento" class="form-input">
+					</div>
+
+
+					<div class="col-12 col-md-6">
+						
+						<p class="form-label"> Perfil de usuario </p><br>
+						
+						<label for="comprar" class="form-label">Comprar</label>
+						<input type="radio" name="interes" id="comprar"   value="c">
+						<label for="vender" class="form-label">Vender</label>
+						<input type="radio" name="interes" id="vender"  value="v">
+						<label for="ambos" class="form-label">Ambos</label>
+						<input type="radio" name="interes" id="ambos"  value="a">
+					</div>
+					<div class="col-12 col-md-6">
+						<p class="form-label display-block">Intereses</p><br>
+						<label for="comprar" class="form-label">Electro</label>
+						<input type="checkbox" name="interes" id="comprar" class="form-check-input" value="c">
+						<label for="vender" class="form-label">Moda</label>
+						<input type="checkbox" name="interes" id="vender" class="form-check-input" value="v">
+						<label for="ambos" class="form-label">Hogar</label>
+						<input type="checkbox" name="interes" id="ambos" class="form-check-input" value="a">
+						<label for="ambos" class="form-label">Jugueteria</label>
+						<input type="checkbox" name="interes" id="ambos" class="form-check-input" value="a">
+						<label for="ambos" class="form-label">Vida sana</label>
+						<input type="checkbox" name="interes" id="ambos" class="form-check-input" value="a">
+
+					</div>
+
+					
+
+					
+					
+
+					<div class="col-12 col-md-6">
+						<label for="email" class="form-label">Email:</label>
+						<input type="email"  name="email" class="form-input">
+					</div>
+					<div class="col-12 col-md-6">
+						<label for="password" class="form-label">Contraseña:</label>
+						<input type="password"  name="password" class="form-input">
+					</div>
+					<div class="col-12 col-md-6">
+						<label for="password2" class="form-label">Confirma tu contraseña:</label>
+						<input type="password2"  name="password2" class="form-input">
+					</div>
+					
+					<div class="col-12 col-md-6">
+						<label for="image" class="form-label">Foto de perfil:</label>
+						<input type="file" id="image" name="image" class="form-input" >
+					</div>
+					<div class="col-12">
+						<button type="submit" class="buy-now-button"><a href="/">Confirmar</a>
+                        
+                        </button>
+					</div>
+					<div class="col-12">
+						<button type="reset" class="buy-now-button">Borrar
+                        
+                        </button>
+					</div>
+				</div>
+			</form>
+		</div>
+
+	</div>
+	<!-- /todos los productos -->
+
+	<!-- footer -->
+	<%- include('partials/footer') %>
+	<!-- /footer -->
+</body>	
+</html>
