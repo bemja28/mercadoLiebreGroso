@@ -407,6 +407,12 @@ textarea.form-input {
   padding: 15px;
 }
 
+/*====== button cambio de color ======*/
+
+div.cambioColor :hover{
+background-color:  #0022AA;
+}
+
 
 
 /*====== Media-Queries ======*/
